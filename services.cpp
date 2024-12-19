@@ -888,6 +888,7 @@ void second_laba_menu(){
             _getch();
             break;
         }
+        system("cls");
     }
     system("cls");
 }
@@ -932,9 +933,8 @@ void third_laba_menu(){
 					standart_init(*arr, size);
 					break;
 					}
-				default:
-				break;
 				}
+                _getch();
 				break;
 			}
 			case '2':
@@ -960,12 +960,14 @@ void third_laba_menu(){
 					break;
 				}
 				cout << "Done" << endl;
+                _getch();
 				break;
 			}
 			case '3':
 			{
 				quicksort(*arr, 0, size * size - 1);
 				cout << "Array sorted" << endl;
+                _getch();
 				break;
 			}
 			case '4':
@@ -994,6 +996,7 @@ void third_laba_menu(){
 					break;
 				}
 				cout << "Done" << endl;
+                _getch();
 				break;
 			}
 			case '5':{
@@ -1002,11 +1005,14 @@ void third_laba_menu(){
 				system("cls");
 				standart_init(*arr, 3);
 				determinant_of_matrix(*arr, 3);
+                _getch();
 
 			}
 			default:
 				break;	
+        
 		}
+        system("cls");
 	}
     system("cls");
 }
@@ -1052,7 +1058,6 @@ void fourth_laba_menu(){
                     cout << "Input your string: " << endl;
                     cin.sync();
                     cin.getline(char_arr, 100);
-                    cout << char_arr << endl;
                     cur_str_size = string_length(char_arr);
                     break;
             }
@@ -1100,6 +1105,7 @@ void fourth_laba_menu(){
                 cin.sync();
                 cin.getline(substring, 100);
                 ans = kmp(char_arr, substring);
+                break;
             }
             }
             cout << "Matches found: " << ans;
@@ -1107,6 +1113,6 @@ void fourth_laba_menu(){
             break;
         }
         }
-    }
     system("cls");
+    }
 }
