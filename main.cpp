@@ -43,6 +43,7 @@ main(){
                     system("cls");
                     break;
                 }
+                break;
             }
         case '2':{
             second_laba_menu(); 
@@ -60,4 +61,5 @@ main(){
             break;
         }
     }
+}
 }
