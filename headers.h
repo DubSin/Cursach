@@ -45,8 +45,6 @@ void determinant_of_matrix(int* arr, int size);
 
 void quicksort(int* arr, int low, int high);
 
-unsigned string_length(char *S);
-
 void vertical_output(char *str, int cur_size);
 
 void partition_output(char *str, int start_pos, int end_pos);
